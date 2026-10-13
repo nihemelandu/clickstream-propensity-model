@@ -91,4 +91,3 @@ To be defined in issue #3 — Define actionable customer segments
   A Comparative Analysis of Clickstream Data Representations and Machine Learning
   Models. IEEE Access, Vol. 13, pp. 43796–43817. DOI: 10.1109/ACCESS.2025.3548267
 - CRISP-DM Framework — Phase 1: Business Understanding
-EOF
