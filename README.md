@@ -29,7 +29,7 @@ An end-to-end machine learning system that scores e-commerce customer sessions b
 
 This project follows the **CRISP-DM** framework, implemented through **Agile sprints** with MLOps practices. The modeling approach replicates and extends:
 
-> Tokuç, A. A. & Dağ, T. (2025). Predicting User Purchases From Clickstream Data: A Comparative Analysis of Clickstream Data Representations and Machine Learning Models. *IEEE Access*, Vol. 13, pp. 43796–43817. [DOI: 10.1109/ACCESS.2025.3548267](https://doi.org/10.1109/ACCESS.2025.3548267)
+> Tokuç, A. A. & Dağ, T. (2025). Predicting User Purchases From Clickstream Data: A Comparative Analysis of Clickstream Data Representations and Machine Learning Models. *IEEE Access*, Vol. 13, pp. 43796-43817. [DOI: 10.1109/ACCESS.2025.3548267](https://doi.org/10.1109/ACCESS.2025.3548267)
 
 **Key modeling decisions:**
 - Binary classification — purchase vs no purchase at session level
@@ -40,29 +40,29 @@ This project follows the **CRISP-DM** framework, implemented through **Agile spr
 ---
 
 ## Project Structure
-clickstream-propensity-model/
-├── dashboard/ # Streamlit dashboard — one folder per sprint
-│ └── sprint_1/
-│ ├── app.py # Dashboard entry point
-│ ├── tabs/ # One module per dashboard tab
-│ └── utils/ # Reusable chart functions
-├── docs/ # Project documentation
-│ └── business_understanding.md
-├── notebooks/ # Jupyter notebooks — one folder per sprint
-│ └── sprint_1/
-├── src/ # Source code
-│ ├── data/ # Preprocessing pipeline
-│ ├── features/ # Feature engineering
-│ ├── models/ # Model training and inference
-│ └── utils/ # Shared utilities
-├── models/ # Trained model artifacts — one folder per sprint
-│ └── sprint_1/
-├── data/ # Raw and processed data (not tracked in Git)
-│ ├── raw/
-│ └── processed/
-├── requirements.txt # Project dependencies
-└── README.md
 
+    clickstream-propensity-model/
+    ├── dashboard/                  Streamlit dashboard — one folder per sprint
+    │   └── sprint_1/
+    │       ├── app.py              Dashboard entry point
+    │       ├── tabs/               One module per dashboard tab
+    │       └── utils/              Reusable chart functions
+    ├── docs/                       Project documentation
+    │   └── business_understanding.md
+    ├── notebooks/                  Jupyter notebooks — one folder per sprint
+    │   └── sprint_1/
+    ├── src/                        Source code
+    │   ├── data/                   Preprocessing pipeline
+    │   ├── features/               Feature engineering
+    │   ├── models/                 Model training and inference
+    │   └── utils/                  Shared utilities
+    ├── models/                     Trained model artifacts — one folder per sprint
+    │   └── sprint_1/
+    ├── data/                       Raw and processed data (not tracked in Git)
+    │   ├── raw/
+    │   └── processed/
+    ├── requirements.txt            Project dependencies
+    └── README.md
 
 ---
 
@@ -89,18 +89,14 @@ clickstream-propensity-model/
 
 ### Installation
 
-```bash
-git clone https://github.com/nihemelandu/clickstream-propensity-model.git
-cd clickstream-propensity-model
-pip install -r requirements.txt
-```
+    git clone https://github.com/nihemelandu/clickstream-propensity-model.git
+    cd clickstream-propensity-model
+    pip install -r requirements.txt
 
 ### Run Dashboard Locally
 
-```bash
-cd dashboard/sprint_1
-streamlit run app.py
-```
+    cd dashboard/sprint_1
+    streamlit run app.py
 
 ---
 
@@ -108,14 +104,14 @@ streamlit run app.py
 
 | Sprint | Focus | Status |
 |---|---|---|
-| Sprint 1 | Business understanding — problem definition, solution framework, success metrics | ✅ In Progress |
-| Sprint 2 | Data understanding — EDA, class imbalance, session structure | ⬜ Pending |
-| Sprint 3 | EDA deep dive — correlation analysis, feature importance review | ⬜ Pending |
-| Sprint 4 | Data preparation — preprocessing pipeline | ⬜ Pending |
-| Sprint 5 | Data representations — aggregated, flattened, hybrid | ⬜ Pending |
-| Sprint 6 | Modeling — baseline models, PSO feature selection, hyperparameter tuning | ⬜ Pending |
-| Sprint 7 | Evaluation — metrics, calibration, segment validation | ⬜ Pending |
-| Sprint 8 | Insights and deployment — feature importance, MLOps | ⬜ Pending |
+| Sprint 1 | Business understanding — problem definition, solution framework, success metrics | In Progress |
+| Sprint 2 | Data understanding — EDA, class imbalance, session structure | Pending |
+| Sprint 3 | EDA deep dive — correlation analysis, feature importance review | Pending |
+| Sprint 4 | Data preparation — preprocessing pipeline | Pending |
+| Sprint 5 | Data representations — aggregated, flattened, hybrid | Pending |
+| Sprint 6 | Modeling — baseline models, PSO feature selection, hyperparameter tuning | Pending |
+| Sprint 7 | Evaluation — metrics, calibration, segment validation | Pending |
+| Sprint 8 | Insights and deployment — feature importance, MLOps | Pending |
 
 ---
 
