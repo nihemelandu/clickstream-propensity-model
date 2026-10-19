@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Oct 18 17:03:19 2026
+Created on Mon Oct 19 15:34:52 2026
 
 @author: ngozi
 """
@@ -10,41 +10,40 @@ import os
 sys.path.append(os.path.dirname(__file__))
 
 import streamlit as st
-from tabs import overview, problem, solution, performance
+from tabs import overview, segments, model, impact
 
 st.set_page_config(
-    page_title="Purchase Propensity Model | Sprint 1",
+    page_title="Customer Purchase Intent Dashboard",
     page_icon="🛒",
     layout="wide"
 )
 
 # Header
-st.title("🛒 Purchase Propensity Model")
-st.markdown(
-    """
-    **Project:** Clickstream Purchase Propensity | 
-    **Sprint:** 1 | 
-    **Status:** Baseline
-    """
-)
+col_title, col_meta = st.columns([3, 1])
+with col_title:
+    st.title("🛒 Customer Purchase Intent Dashboard")
+with col_meta:
+    st.markdown("**Last Updated:** —")
+    st.markdown("**Data:** Oct 2019 – Apr 2020")
+
 st.divider()
 
 # Navigation tabs
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📋 Overview",
-    "🔍 The Problem",
-    "💡 The Solution",
-    "📊 Model Performance"
+    "📊 Overview",
+    "🎯 Segments",
+    "⚙️ Model",
+    "💼 Business Impact"
 ])
 
 with tab1:
     overview.render()
 
 with tab2:
-    problem.render()
+    segments.render()
 
 with tab3:
-    solution.render()
+    model.render()
 
 with tab4:
-    performance.render()
+    impact.render()
