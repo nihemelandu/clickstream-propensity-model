@@ -1,6 +1,6 @@
 # Customer Purchase Intent Dashboard
 
-## [View Live Dashboard](https://your-app.streamlit.app|https://clickstream-propensity.streamlit.app)
+## [View Live Dashboard](https://clickstream-propensity.streamlit.app)
 
 ---
 
