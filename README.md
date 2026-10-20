@@ -1,6 +1,6 @@
 # Customer Purchase Intent Dashboard
 
-## [View Live Dashboard](https://your-app.streamlit.app)
+## [View Live Dashboard](https://your-app.streamlit.app|https://clickstream-propensity.streamlit.app)
 
 > Dashboard link will be updated once Streamlit Community Cloud deployment is complete.
 
