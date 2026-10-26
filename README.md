@@ -8,7 +8,7 @@
 
 An e-commerce store sees millions of sessions, and most end without a purchase. Marketing can only spend on some of them: a discount, a reminder, a retargeting ad. Spending on every session wastes money, and spending on the wrong ones misses buyers.
 
-To choose, marketing needs a score for each session that says how likely it is to convert, computed from the behavior seen so far. [TODO: confirm who uses the score and whether it is applied during the session or after it.]
+To choose, marketing needs a score for each session that says how likely it is to convert, computed from the behavior seen so far.
 
 **This project asks:** can clickstream behavior alone produce a session-level purchase probability good enough to rank sessions and decide where to spend?
 
