@@ -1,35 +1,33 @@
 """
 Pipeline configuration — paths, parameters, and constants.
 All pipeline components import from here.
+Update paths to match your local environment.
 """
 import os
 
+# ── Base Path ─────────────────────────────────────────────────────────────────
+# Root of the repository — works regardless of where script is run from
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 # ── Data Paths ────────────────────────────────────────────────────────────────
-# Update DRIVE_PATH to match your Google Drive mount point in Colab
-DRIVE_PATH = '/content/drive/MyDrive/clickstream-propensity-model'
+SILVER_PATH = os.path.join(BASE_PATH, 'data', 'processed', 'silver')
+GOLD_PATH   = os.path.join(BASE_PATH, 'data', 'processed', 'gold')
 
-RAW_PATH    = f'{DRIVE_PATH}/data/raw'
-BRONZE_PATH = f'{DRIVE_PATH}/data/processed/bronze'
-SILVER_PATH = f'{DRIVE_PATH}/data/processed/silver'
-GOLD_PATH   = f'{DRIVE_PATH}/data/processed/gold'
+# ── Artifact Path — dashboard reads from here ─────────────────────────────────
+ARTIFACTS_PATH = os.path.join(BASE_PATH, 'artifacts')
 
-# ── Source Files ──────────────────────────────────────────────────────────────
-RAW_FILES = [
-    '2019-Oct.parquet',
-    '2019-Nov.parquet'
-]
+# ── Model Path ────────────────────────────────────────────────────────────────
+MODEL_PATH = os.path.join(BASE_PATH, 'models')
+
+# ── Input File ───────────────────────────────────────────────────────────────
+SILVER_FILE = os.path.join(SILVER_PATH, 'sessions_clean.parquet')
 
 # ── Sampling ──────────────────────────────────────────────────────────────────
-SAMPLE_FRACTION = 0.05
-RANDOM_SEED     = 42
+RANDOM_SEED = 42
 
 # ── Model ─────────────────────────────────────────────────────────────────────
-TARGET_COLUMN    = 'has_purchase'
-TEST_SIZE        = 0.10
-MODEL_PATH       = f'{DRIVE_PATH}/models/sprint_1b'
-
-# ── Dashboard Artifacts ───────────────────────────────────────────────────────
-ARTIFACTS_PATH = f'{DRIVE_PATH}/dashboard/artifacts'
+TARGET_COLUMN = 'has_purchase'
+TEST_SIZE     = 0.10
 
 # ── Segmentation Thresholds ───────────────────────────────────────────────────
 HIGH_INTENT_THRESHOLD   = 0.7

@@ -1,0 +1,22 @@
+{
+  "total_sessions": 1151014,
+  "baseline_conv_rate": 0.0609,
+  "generated_at": "2026-10-31T09:06:43.002221+00:00",
+  "segments": {
+    "high": {
+      "sessions": 79336,
+      "share": 0.0689,
+      "conversion_rate": 0.8716
+    },
+    "medium": {
+      "sessions": 20576,
+      "share": 0.0179,
+      "conversion_rate": 0.0455
+    },
+    "low": {
+      "sessions": 1051102,
+      "share": 0.9132,
+      "conversion_rate": 0.0001
+    }
+  }
+}
